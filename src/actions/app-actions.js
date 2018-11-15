@@ -1,7 +1,11 @@
 import { AppTypes } from '../constants';
 
-export const showToast = ({ message }) => (dispatch) =>
-  dispatch({ type: AppTypes.SHOW_TOAST, payload: { message } });
+export const nextQuestion = (payload) => ({
+  type: AppTypes.NEXT_QUESTION,
+  payload
+});
 
-export const hideToast = () => (dispatch) =>
-  dispatch({ type: AppTypes.HIDE_TOAST });
+export const prevQuestion = (payload) => ({
+  type: AppTypes.PREV_QUESTION,
+  payload
+});
