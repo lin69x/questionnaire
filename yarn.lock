@@ -5896,6 +5896,11 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
+mediaquery@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/mediaquery/-/mediaquery-0.0.3.tgz#387d61c10aa95ff4d6907f6aabdd22d7a898e03e"
+  integrity sha1-OH1hwQqpX/TWkH9qq90i16iY4D4=
+
 mem@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/mem/-/mem-1.1.0.tgz#5edd52b485ca1d900fe64895505399a0dfa45f76"
@@ -8001,6 +8006,13 @@ redux-form@^7.4.2:
     lodash-es "^4.17.10"
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
+
+redux-responsive@^4.3.8:
+  version "4.3.8"
+  resolved "https://registry.yarnpkg.com/redux-responsive/-/redux-responsive-4.3.8.tgz#286ef51c96a7222f030c2f48e4f26ec3bb645a10"
+  integrity sha512-h+q9KTfaOdgXxFhqwHhAIHT/1ZiARFmM3iLMOnjpc79BUXlW24N3qJmUR5kOQYicIKKL0usIjNuNa+2HFTnxLg==
+  dependencies:
+    mediaquery "0.0.3"
 
 redux-saga@^0.16.2:
   version "0.16.2"

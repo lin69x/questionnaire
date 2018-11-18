@@ -1,0 +1,19 @@
+.question-container {
+    height: 175px;
+}
+
+.fade-enter {
+    position: fixed;
+}
+.fade-enter-done{
+    opacity: 1;
+    transition: .1s ease-in;
+}
+.fade-enter.fade-enter-active{
+    opacity: 0;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: .2s ease;
+}
