@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render radio group INPUT FIELD should match snapshot 1`] = `
+<form>
+  <div>
+    <h4>
+      input field
+    </h4>
+    <input
+      name="testInput"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+</form>
+`;
+
+exports[`render radio group RADIO GROUP should match snapshot 1`] = `
+<form>
+  <div>
+    <h4>
+      Radio Group
+    </h4>
+    <label
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <input
+        checked={false}
+        name="testRadio"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onDragStart={[Function]}
+        onDrop={[Function]}
+        onFocus={[Function]}
+        type="radio"
+        value="option 1"
+      />
+       
+      option 1
+    </label>
+    <br />
+    <label
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <input
+        checked={false}
+        name="testRadio"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onDragStart={[Function]}
+        onDrop={[Function]}
+        onFocus={[Function]}
+        type="radio"
+        value="option 2"
+      />
+       
+      option 2
+    </label>
+    <br />
+  </div>
+</form>
+`;
+
+exports[`render radio group TEXTAREA should match snapshot 1`] = `
+<form>
+  <div>
+    <h4>
+      input field
+    </h4>
+    <textarea
+      name="testInput"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+</form>
+`;

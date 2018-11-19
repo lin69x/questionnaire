@@ -6,7 +6,7 @@ import {renderRadioGroup, renderInputField} from '../render-field';
 
 import './question-form.css';
 
-const Question = ({
+export const Question = ({
                     headline,
                     question_type,
                     choices,
@@ -60,14 +60,14 @@ const Question = ({
   </form>
 );
 
-Question.propTYpes = {
+Question.propTypes = {
   headline: PropTypes.string.isRequired,
   question_type: PropTypes.string.isRequired,
   choices: PropTypes.array,
   identifier: PropTypes.string.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   actions: PropTypes.array,
-  multiline: PropTypes.oneOf([PropTypes.bool, PropTypes.string]),
+  multiline: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
 };
 
 Question.defaultProps = {
@@ -79,5 +79,5 @@ Question.defaultProps = {
 export default reduxForm({
   form: 'questionnaire',
   destroyOnUnmount: false,
-  forceUnregisterOnUnmount: true,
+  forceUnregisterOnUnmount: false,
 })(Question);

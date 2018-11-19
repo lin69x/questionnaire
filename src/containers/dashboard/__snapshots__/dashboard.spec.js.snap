@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dashboard/> should match snapshot 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row center-md"
+  >
+    <h2>
+      Test Name
+    </h2>
+  </div>
+  <div
+    className="row center-md"
+  >
+    <h3>
+      Test Description
+    </h3>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-8 col-md-offset-2"
+    >
+      <div
+        style={
+          Object {
+            "background": "#fff",
+            "borderRadius": 2,
+            "height": 230,
+            "padding": 16,
+          }
+        }
+      >
+        <div
+          className="row center-md"
+        >
+          <h3>
+            Thank You!
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

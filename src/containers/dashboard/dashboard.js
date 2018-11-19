@@ -4,11 +4,10 @@ import {connect} from 'react-redux';
 import {Row, Col} from 'react-flexbox-grid';
 import Layout from '../../components/layout';
 import QuestionForm from '../../components/question-form';
-import Message from '../../components/message';
 import Card from '../../components/card';
 import {AppActions} from '../../actions';
 
-const Dashboard = ({
+export const Dashboard = ({
  app: {name, description, questions, currentQuestionIdx},
  prevQuestion,
  nextQuestion,
@@ -16,6 +15,8 @@ const Dashboard = ({
   <Layout>
     <Row center='md'>
       <h2>{name}</h2>
+    </Row>
+    <Row center='md'>
       <h3>{description}</h3>
     </Row>
     <Row>
@@ -23,7 +24,7 @@ const Dashboard = ({
         <Card>
           {(() => {
             if(currentQuestionIdx >= questions.length)
-              return <Message message='Thank You!' />;
+              return <Row center='md'><h3>Thank You!</h3></Row>;
 
             return <QuestionForm
               {...questions[currentQuestionIdx]}

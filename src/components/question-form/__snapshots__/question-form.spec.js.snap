@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question Form should match snapshot 1`] = `
+<form
+  onSubmit={[MockFunction]}
+>
+  <div>
+    <div
+      className="question-container"
+    >
+      <div>
+        <h4>
+          Headline
+        </h4>
+        <label
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <Field
+            component="input"
+            name="uniqueKey"
+            type="radio"
+            value="option 1"
+          />
+           
+          option 1
+        </label>
+        <br />
+        <label
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <Field
+            component="input"
+            name="uniqueKey"
+            type="radio"
+            value="option 2"
+          />
+           
+          option 2
+        </label>
+        <br />
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Test Button
+    </button>
+  </div>
+</form>
+`;

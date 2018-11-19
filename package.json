@@ -4,7 +4,6 @@
   "private": true,
   "homepage": " https://prakharsingh.github.io/questionnaire/",
   "dependencies": {
-    "gh-pages": "^2.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -14,11 +13,11 @@
     "react-transition-group": "^2.5.0",
     "redux": "^4.0.1",
     "redux-form": "^7.4.2",
-    "redux-responsive": "^4.3.8",
     "redux-saga": "^0.16.2"
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "react-scripts test",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -33,5 +32,11 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.6.3"
+  }
 }

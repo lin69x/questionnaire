@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card/> should match snapshot 1`] = `
+<div
+  style={
+    Object {
+      "background": "#fff",
+      "borderRadius": 2,
+      "height": 230,
+      "padding": 16,
+    }
+  }
+>
+  test child
+</div>
+`;

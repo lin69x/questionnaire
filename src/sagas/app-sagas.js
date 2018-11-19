@@ -4,14 +4,14 @@ import { delay } from "redux-saga"
 
 import { AppTypes } from '../constants';
 
-function* disableForm() {
+export function* disableForm() {
   try {
     yield put(startSubmit('questionnaire'));
     yield call(delay, 500);
     yield put(stopSubmit('questionnaire'));
   }
   catch(error) {
-    throw new Error(error);
+    yield call(Error, error);
   }
 }
 
