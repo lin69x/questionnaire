@@ -17,7 +17,7 @@ Card.propTypes = {
 
 Card.defaultProps = {
   styles: {
-    height: 230,
+    height: 250,
     background: '#fff',
     padding: 16,
     borderRadius: 2,

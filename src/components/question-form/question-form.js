@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Row } from 'react-flexbox-grid';
 import {TransitionGroup, CSSTransition} from 'react-transition-group';
 import {reduxForm} from 'redux-form';
 import {renderRadioGroup, renderInputField} from '../render-field';
@@ -49,14 +50,15 @@ export const Question = ({
         </div>
       </CSSTransition>
     </TransitionGroup>
-    <div>
+    <hr/>
+    <Row end="xs">
       {
         React
           .Children
           .map(actions, child =>
             React.cloneElement(child, {disabled: child.props.disabled || submitting})
           )}
-    </div>
+    </Row>
   </form>
 );
 
